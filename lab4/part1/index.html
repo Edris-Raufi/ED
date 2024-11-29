@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Silly story generator</title>
+
+    <style>
+      body {
+        font-family: helvetica, sans-serif;
+        width: 350px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      div {
+        padding-bottom: 10px;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        width: 220px;
+      }
+
+      input[type="radio"] {
+        margin: 0 5px;
+      }
+
+      button {
+        padding: 10px 15px;
+        background-color: #5e2612;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      button:hover {
+        background-color: #3e1a0d;
+      }
+
+      p {
+        background: #ffc125;
+        color: #5e2612;
+        padding: 10px;
+        visibility: hidden;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+
+      /* Ensures left alignment */
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .radio-group {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 10px;
+      }
+
+      .radio-group label {
+        margin-right: 10px;
+      }
+
+      /* Optional: Align story to the left with some margin */
+      .story {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #ffc125;
+        color: #5e2612;
+        visibility: hidden;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="input-group">
+        <label for="customname">Enter custom name:</label>
+        <input id="customname" type="text" placeholder="e.g., Alice" />
+      </div>
+
+      <div class="radio-group">
+        <label for="us">US</label>
+        <input id="us" type="radio" name="ukus" value="us" checked />
+        <label for="uk">UK</label>
+        <input id="uk" type="radio" name="ukus" value="uk" />
+      </div>
+
+      <div>
+        <button class="randomize">Generate random story</button>
+      </div>
+
+      <p class="story"></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
