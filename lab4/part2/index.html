@@ -1,0 +1,48 @@
+<!--Name: Mohammad edris raufi-->
+<!-- student number : 100958286 -->
+<!-- Date: 2024-11-28 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="gallery-title">Image Gallery</h1>
+    <div class="gallery">
+      <!-- Gallery Image 1 -->
+      <div class="gallery-item">
+        <img src="images/pic1.jpg" alt="Image 1" />
+      </div>
+      <!-- Gallery Image 2 -->
+      <div class="gallery-item">
+        <img src="images/pic2.jpg" alt="Image 2" />
+      </div>
+      <!-- Gallery Image 3 -->
+      <div class="gallery-item">
+        <img src="images/pic3.jpg" alt="Image 3" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/pic4.jpg" alt="Image 4" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/pic5.jpg" alt="Image 5" />
+      </div>
+    </div>
+
+    <!-- Lightbox Modal (image viewer) -->
+    <div id="lightbox" class="lightbox">
+      <span id="close" class="close">&times;</span>
+      <div id="lightbox-container">
+        <img id="lightbox-img" class="lightbox-img" />
+        <button id="darken-lighten-btn" class="toggle-btn">Darken</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
