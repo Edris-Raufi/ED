@@ -1,0 +1,28 @@
+body {
+    background-color: #222;
+    font-family: 'Arial', sans-serif; /* Similar font as shown in the image */
+    color: #fff;
+    text-align: center;  /* Center-align the title and the ball count */
+  }
+  
+  h1 {
+    font-size: 3rem;  /* Set the font size to be large */
+    text-transform: uppercase; /* Make the text uppercase */
+    font-weight: bold;  /* Make the title bold */
+    letter-spacing: 0.5rem;  /* Add some spacing between letters */
+    margin-top: 20px;  /* Add some margin from the top */
+  }
+  
+  #ball-count {
+    font-size: 1.5rem;  /* Smaller font size for the ball count */
+    color: #aaa;  /* Light grey color for the count */
+    position: absolute;
+    top: 35px;  /* Position the ball count just below the title */
+    right: 5px;
+  }
+  
+  canvas {
+    border: 1px solid #fff;  /* Optional: Add a border to the canvas for better visibility */
+    margin-top: 20px;
+  }
+  
