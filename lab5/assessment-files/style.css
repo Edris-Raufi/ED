@@ -25,7 +25,7 @@ font[size="7"], font[size="6"], font[size="5"] {
 
 p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
-  color: #2a2a2a;
+  color: #333; /* Updated for better contrast */
 }
 
 font[size="7"] {
@@ -51,8 +51,9 @@ p, li, table {
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
+/* Updated to semantic <nav> tag */
+nav, article, footer, .secondary {
+  background-color: #333; /* Darker background for contrast */
 }
 
 article, footer, .secondary {
@@ -63,36 +64,37 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+/* Updated .nav to <nav> for semantic HTML */
+nav {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #333; /* Darker background for contrast */
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: white; /* Better contrast with the dark background */
 }
 
-div[class="nav"] .search {
+nav .search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -159,6 +161,13 @@ tbody tr:nth-child(odd) {
   background-color: #def;
 }
 
+table caption {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 /* styling content images and audio */
 
 img, audio {
@@ -179,6 +188,13 @@ audio {
 
 .show-hide {
   cursor: pointer;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.show-hide:focus {
+  outline: 2px solid #005fcc; /* Focus state for keyboard navigation */
 }
 
 .comments font[size="6"] {
@@ -207,6 +223,12 @@ audio {
 .comment-form input {
   margin-left: 1rem;
   flex: 6;
+}
+
+/* Focus states for better accessibility */
+.comment-form input:focus, .comment-form label:focus {
+  outline: 2px solid #005fcc;
+  border: 1px solid #005fcc;
 }
 
 .show-hide {
