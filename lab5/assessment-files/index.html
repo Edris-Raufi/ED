@@ -6,10 +6,6 @@ Description: This is the main landing page of the website that
 introduces the accessibility troubleshooting tutorial and contains the main navigation and article content.
 -->
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +13,8 @@ introduces the accessibility troubleshooting tutorial and contains the main navi
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accessibility Assessment</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&family=Sonsie+One" rel="stylesheet" type="text/css">
+
   <link rel="stylesheet" href="style.css">
 
   <!-- Fix for HTML5 elements in old IE versions -->
@@ -91,11 +88,13 @@ introduces the accessibility troubleshooting tutorial and contains the main navi
       <h3>Habitats and Eating Habits</h3>
       <p>Wild bears eat a variety of meat, fish, fruit, nuts, and other naturally growing ingredients...</p>
 
-      <img src="media/wild-bear.jpg" alt="Wild bear in the forest" />
+      <img src="media/wild-bear.jpg" alt="Wild bear in the forest">
+
 
       <p>Urban bears have abandoned the old ways...</p>
 
-      <img src="media/urban-bear.jpg" alt="Urban bear scavenging" />
+      <img src="media/urban-bear.jpg" alt="Urban bear scavenging">
+
 
       <h3>Mating Rituals</h3>
       <p>Bears are romantic creatures by nature...</p>
@@ -119,7 +118,7 @@ introduces the accessibility troubleshooting tutorial and contains the main navi
         <div id="comments-section" class="comment-wrapper" hidden>
           <h3>Add a Comment</h3>
 
-          <form class="comment-form" aria-labelledby="add-comment">
+          <form class="comment-form">
             <div class="flex-pair">
               <label for="name">Your Name:</label>
               <input type="text" name="name" id="name" placeholder="Enter your name" required>
